@@ -1,0 +1,82 @@
+/* @usage: break point */
+@mixin respond($breakpoint) {
+  @if ($breakpoint == large) {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == medium) {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == lsmall) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == msmall) {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == xsmall) {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+}
+
+/* @usage: fonts */
+@mixin font($size, $weight) {
+  font-family: $font;
+  font-weight: $weight;
+  @if ($size == heading) {
+    font-size: 40pt;
+  }
+  @if ($size == subheading) {
+    font-size: 24pt;
+  }
+  @if ($size == smallheading) {
+    font-size: 18pt;
+  }
+  @if ($size == btntext) {
+    font-size: 18pt;
+  }
+  @if ($size == bodytext) {
+    font-size: 16pt;
+  }
+  @if ($size == smalltext) {
+    font-size: 14pt;
+  }
+}
+
+/* @usage: text height */
+@mixin lheight($size) {
+  height: $size;
+  line-height: $size;
+}
+
+/* @usage: width */
+@mixin inwidth($left, $width) {
+  float: $left;
+  width: $width;
+}
+
+/* @usage: icons */
+@mixin icons($size) {
+  float: left;
+  width: $size;
+  height: $size;
+}
+
+/* @usage: box */
+@mixin box() {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* @usage: radius */
+@mixin radius($radius: 4px) {
+  border-radius: $radius;
+}
