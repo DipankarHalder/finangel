@@ -3,13 +3,20 @@
 .container {
   margin: 0px auto;
   padding: 0px 10px;
-  max-width: 1244px;
+  max-width: 1284px;
   @include box();
 }
 
+.mainwebwrapper,
+.pageinside,
 .main,
 .wrapperPage,
 .cover,
 .coverpage {
   @include inwidth(left, 100%);
+}
+
+.pageinside {
+  position: relative;
+  box-shadow: 3px 3px 30px rgb(0 0 0 / 16%);
 }

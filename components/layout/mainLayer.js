@@ -13,8 +13,14 @@ export default function MainLayout({ children, layoutProps }) {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
-      <Header backbg={backbg} />
-      <main className={common.main}>{children}</main>
+      <div className={common.mainwebwrapper}>
+        <div className={common.container}>
+          <div className={common.pageinside}>
+            <Header backbg={backbg} />
+            <main className={common.main}>{children}</main>
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 }

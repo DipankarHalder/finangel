@@ -1,6 +1,19 @@
 @import "../core/color.scss";
 @import "../core/mixin.scss";
 
+.commonFullWhiteArea {
+  @include inwidth(left, 100%);
+  background: $white;
+  padding: 100px 0px;
+  border-bottom: 1px solid $ipgray;
+}
+.commonHeading {
+  @include inwidth(left, 100%);
+  @include font(38px, 700);
+  margin-bottom: 30px;
+  color: $text;
+}
+
 .heroSection {
   @include inwidth(left, 100%);
   height: 520px;
@@ -15,7 +28,6 @@
     @include font(38px, 700);
     text-align: center;
     line-height: 56px;
-    letter-spacing: -0.5px;
     color: $white;
   }
   & > span {
@@ -31,5 +43,165 @@
       background: $white;
       color: $text;
     }
+  }
+}
+.rowpannel {
+  @include inwidth(left, 100%);
+  display: flex;
+  background: $white;
+  justify-content: space-between;
+  border-bottom: 1px solid $ipgray;
+  .rowLeft {
+    width: 50%;
+    img {
+      @include inwidth(left, 100%);
+    }
+  }
+  .rowRight {
+    width: 50%;
+    padding: 65px 100px;
+    @include box();
+    display: flex;
+    flex-direction: column;
+    h3 {
+      @extend .commonHeading;
+    }
+    .rowBlock {
+      @include inwidth(left, 100%);
+      margin-bottom: 40px;
+      h5 {
+        @include inwidth(left, 100%);
+        @include font(24px, 600);
+        margin-bottom: 10px;
+        color: $text;
+      }
+      p {
+        @include inwidth(left, 100%);
+        @include font(17px, 500);
+        line-height: 24px;
+        color: lighten($black, 30%);
+        margin: 0px;
+      }
+    }
+  }
+}
+.itWorkHow {
+  @extend .commonFullWhiteArea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    @extend .commonHeading;
+    text-align: center;
+  }
+  p {
+    @include inwidth(left, 100%);
+    @include font(20px, 400);
+    line-height: 28px;
+    color: $text;
+    text-align: center;
+    margin: 0px;
+    b {
+      font-weight: 700;
+    }
+  }
+}
+.achieveSection {
+  @extend .commonFullWhiteArea;
+  h3 {
+    @extend .commonHeading;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  ul {
+    @include inwidth(left, 70%);
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    li {
+      @include inwidth(left, 33.3%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > span {
+        @include inwidth(left, 100%);
+        margin-bottom: 30px;
+        & > svg {
+          @include icons(70px);
+          position: relative;
+          left: 50%;
+          color: $cobalt;
+          transform: translateX(-50%);
+        }
+      }
+      h4 {
+        @extend .commonHeading;
+        margin-bottom: 4px;
+        text-align: center;
+      }
+      p {
+        @include inwidth(left, 100%);
+        @include font(17px, 500);
+        text-align: center;
+        color: $text;
+        margin: 0px;
+      }
+    }
+  }
+}
+.rowcover {
+  @include inwidth(left, 100%);
+  display: flex;
+  background: $white;
+  justify-content: space-between;
+  border-bottom: 1px solid $ipgray;
+  .rowLeft {
+    width: 50%;
+    padding: 65px 100px;
+    @include box();
+    display: flex;
+    flex-direction: column;
+    h3 {
+      @extend .commonHeading;
+    }
+    .rowBlock {
+      @include inwidth(left, 100%);
+      margin-bottom: 40px;
+      h5 {
+        @include inwidth(left, 100%);
+        @include font(24px, 600);
+        margin-bottom: 10px;
+        color: $text;
+      }
+      p {
+        @include inwidth(left, 100%);
+        @include font(17px, 500);
+        line-height: 24px;
+        color: lighten($black, 30%);
+        margin: 0px;
+      }
+    }
+  }
+  .rowRight {
+    width: 50%;
+    img {
+      @include inwidth(left, 100%);
+    }
+  }
+}
+.scroller {
+  @extend .commonFullWhiteArea;
+  h3 {
+    @extend .commonHeading;
+    text-align: left;
+    padding-left: 100px;
+    @include box();
+    margin-bottom: 50px;
+  }
+  .scrlr {
+    padding: 0px 86px;
+    @include box();
+    @include inwidth(left, 100%);
   }
 }

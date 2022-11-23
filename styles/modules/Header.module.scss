@@ -10,7 +10,7 @@
 .headerCoverColor,
 .headerCoverWhite {
   @include inwidth(left, 100%);
-  padding: 20px 0px;
+  padding: 30px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,13 +27,16 @@
       a {
         margin: 0px 18px;
         @include inwidth(left, auto);
-        @include font(14px, 400);
+        @include font(16px, 500);
       }
     }
   }
 }
 .loginIcn {
   @include inwidth(left, auto);
+  a {
+    @include font(16px, 500);
+  }
 }
 .headerCoverColor {
   .navigation ul li a,
