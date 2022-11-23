@@ -1,0 +1,9 @@
+@import "../core/color.scss";
+@import "../core/mixin.scss";
+
+.headSection {
+  height: 88px;
+  @include inwidth(left, 100%);
+  border-bottom: 1px solid $ipgray;
+  background: $white;
+}

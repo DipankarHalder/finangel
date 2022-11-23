@@ -31,24 +31,7 @@
 @mixin font($size, $weight) {
   font-family: $font;
   font-weight: $weight;
-  @if ($size == heading) {
-    font-size: 40pt;
-  }
-  @if ($size == subheading) {
-    font-size: 24pt;
-  }
-  @if ($size == smallheading) {
-    font-size: 18pt;
-  }
-  @if ($size == btntext) {
-    font-size: 18pt;
-  }
-  @if ($size == bodytext) {
-    font-size: 16pt;
-  }
-  @if ($size == smalltext) {
-    font-size: 14pt;
-  }
+  font-size: $size;
 }
 
 /* @usage: text height */

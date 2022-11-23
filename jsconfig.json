@@ -2,14 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "components/*",
-        "layout/*",
-        "styles/*",
-        "shared/*",
-        "public/*",
-        "config/*"
-      ]
+      "@/*": ["components/*", "styles/*", "public/*"]
     }
   }
 }

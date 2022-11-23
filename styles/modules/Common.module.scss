@@ -1,0 +1,15 @@
+@import "../core/mixin.scss";
+
+.container {
+  margin: 0px auto;
+  padding: 0px 10px;
+  max-width: 1244px;
+  @include box();
+}
+
+.main,
+.wrapperPage,
+.cover,
+.coverpage {
+  @include inwidth(left, 100%);
+}

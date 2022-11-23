@@ -25,7 +25,7 @@
 }
 html,
 body {
-  @include font(bodytext, 400);
+  @include font(14px, 400);
   font-display: optional;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
