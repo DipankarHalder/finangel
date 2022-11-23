@@ -27,6 +27,7 @@ html,
 body {
   @include font(14px, 400);
   font-display: optional;
+  background-color: $backBg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -164,4 +165,16 @@ button,
 }
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+}
+
+.swiper {
+  padding: 40px 16px;
+  .swiper-wrapper {
+    .swiper-slide {
+      padding: 30px;
+      @include box();
+      @include radius(5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
 }

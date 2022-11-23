@@ -1,4 +1,5 @@
 import "@/root/globals.scss";
+import "swiper/css";
 import Head from "next/head";
 import { Fragment } from "react";
 
