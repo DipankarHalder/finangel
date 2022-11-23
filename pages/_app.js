@@ -1,7 +1,6 @@
 import "@/root/globals.scss";
 import Head from "next/head";
 import { Fragment } from "react";
-import MainLayout from "@/mainLayer";
 
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || (page => page);
@@ -18,9 +17,7 @@ function MyApp({ Component, pageProps }) {
           content="width=device-width, initial-scale=1"
         />
       </Head>
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
+      <Component {...pageProps} />
     </Fragment>
   );
 }

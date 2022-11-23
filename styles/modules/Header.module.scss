@@ -1,0 +1,49 @@
+@import "../core/color.scss";
+@import "../core/mixin.scss";
+
+.wrapperHeader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.headerCoverColor,
+.headerCoverWhite {
+  @include inwidth(left, 100%);
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  @include inwidth(left, auto);
+}
+.navigation {
+  @include inwidth(left, auto);
+  ul {
+    @include inwidth(left, auto);
+    li {
+      @include inwidth(left, auto);
+      a {
+        margin: 0px 18px;
+        @include inwidth(left, auto);
+        @include font(14px, 400);
+      }
+    }
+  }
+}
+.loginIcn {
+  @include inwidth(left, auto);
+}
+.headerCoverColor {
+  .navigation ul li a,
+  .loginIcn {
+    color: $white;
+  }
+}
+.headerCoverWhite {
+  .navigation ul li a,
+  .loginIcn {
+    color: lighten($black, 20%);
+  }
+}
