@@ -20,9 +20,16 @@
   }
   & > span {
     color: $white;
+    cursor: pointer;
     padding: 12px 32px;
     border: 1px solid $white;
     margin-top: 40px;
     border-radius: 50px;
+    transition: 0.5s;
+    &:hover {
+      transition: 0.5s;
+      background: $white;
+      color: $text;
+    }
   }
 }

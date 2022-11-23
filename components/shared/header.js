@@ -8,6 +8,15 @@ import header from "@/modules/Header.module.scss";
 import logo_color from "@/logo-color.svg";
 import logo_white from "@/logo-white.svg";
 
+import {
+  HOME,
+  ABOUT,
+  MISSION,
+  STORES,
+  COMMUNITY,
+  LOGIN,
+} from "@/config/routers";
+
 export default function Header({ backbg }) {
   return (
     <div className={header.wrapperHeader}>
@@ -21,7 +30,7 @@ export default function Header({ backbg }) {
             }
           >
             <div className={header.logo}>
-              <Link href="/">
+              <Link href={HOME}>
                 <Image
                   src={backbg === "COLORBG" ? logo_white : logo_color}
                   width={110}
@@ -33,20 +42,22 @@ export default function Header({ backbg }) {
             <div className={header.navigation}>
               <ul>
                 <li>
-                  <Link href="/about">About Us</Link>
+                  <Link href={ABOUT}>About Us</Link>
                 </li>
                 <li>
-                  <Link href="/">Mission</Link>
+                  <Link href={MISSION}>Mission</Link>
                 </li>
                 <li>
-                  <Link href="/">Stores</Link>
+                  <Link href={STORES}>Stores</Link>
                 </li>
                 <li>
-                  <Link href="/">Community</Link>
+                  <Link href={COMMUNITY}>Community</Link>
                 </li>
               </ul>
             </div>
-            <div className={header.loginIcn}>Login</div>
+            <div className={header.loginIcn}>
+              <Link href={LOGIN}>Login</Link>
+            </div>
           </div>
         </div>
       </div>
