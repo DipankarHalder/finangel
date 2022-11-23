@@ -37,13 +37,13 @@
 }
 .headerCoverColor {
   .navigation ul li a,
-  .loginIcn {
+  .loginIcn a {
     color: $white;
   }
 }
 .headerCoverWhite {
   .navigation ul li a,
-  .loginIcn {
+  .loginIcn a {
     color: lighten($black, 20%);
   }
 }
